@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>{% block title %}{% endblock title %} | Django Marketplace</title>
+</head>
+
+<body>
+    <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200"></nav>
+    <div class="px-6 py-6">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+</html>
